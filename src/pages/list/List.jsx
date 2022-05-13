@@ -1,6 +1,6 @@
 import "./list.css"
-import Navbar from './../../components/navbar/Navbar';
-import Header from './../../components/header/Header';
+import Navbar from '../../components/navbar/Navbar';
+import Header from '../../components/header/Header';
 import SearchItem from "../../components/searchItem/SearchItem";
 
 import { useState } from 'react'
@@ -11,7 +11,7 @@ import { DateRange } from "react-date-range";
 const List = () => {
 
   const location = useLocation()
-  const [destination, setDestinationm] = useState(location.state.destination)
+  const [destination, setDestination] = useState(location.state.destination)
   const [date, setDate] = useState(location.state.date)
   const [openDate, setOpenDate] = useState(false)
   const [options, setOptions] = useState(location.state.options)
